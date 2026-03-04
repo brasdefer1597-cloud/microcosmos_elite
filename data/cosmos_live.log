@@ -1,0 +1,149 @@
+nohup: ignoring input
+🌌 Iniciando Simulación de Evolución Cósmica...
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+/home/chalamandramagistral/microcosmos_elite/scripts/sync_mass.sh: line 9: /home/chalamandramagistral/microcosmos_elite/data/telemetry.jsonl: No such file or directory
+tail: cannot open '/home/chalamandramagistral/microcosmos_elite/data/telemetry.jsonl' for reading: No such file or directory
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🟢 Estado del Cosmos: ESTABLE | RAM: 2020MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+/home/chalamandramagistral/microcosmos_elite/scripts/sync_mass.sh: line 7: /home/chalamandramagistral/microcosmos_elite/data/telemetry.jsonl: No such file or directory
+tail: cannot open '/home/chalamandramagistral/microcosmos_elite/data/telemetry.jsonl' for reading: No such file or directory
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2016MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+/home/chalamandramagistral/microcosmos_elite/scripts/sync_mass.sh: line 7: /home/chalamandramagistral/microcosmos_elite/data/telemetry.jsonl: No such file or directory
+tail: cannot open '/home/chalamandramagistral/microcosmos_elite/data/telemetry.jsonl' for reading: No such file or directory
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2000MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+/home/chalamandramagistral/microcosmos_elite/scripts/sync_mass.sh: line 7: /home/chalamandramagistral/microcosmos_elite/data/telemetry.jsonl: No such file or directory
+tail: cannot open '/home/chalamandramagistral/microcosmos_elite/data/telemetry.jsonl' for reading: No such file or directory
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 1986MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2032MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2062MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2048MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2045MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 1968MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2028MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2052MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2046MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2046MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2044MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2042MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2042MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2042MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2068MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2066MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2066MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 1851MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 1904MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2066MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2062MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2091MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2091MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2084MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 1928MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2048MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2047MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2057MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 1999MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2070MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2067MB
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+jq: error (at <unknown>): Expected JSON value (while parsing '')
+🔒 Snapshot actualizado localmente. Sin radiación externa.
+🟢 Estado del Cosmos: ESTABLE | RAM: 2105MB
