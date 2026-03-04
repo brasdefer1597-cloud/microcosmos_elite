@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ShorHistogram from './ShorHistogram';
 import BusinessMetrics from './BusinessMetrics';
 import './App.css';
-
+import GroverRadar from './components/GroverRadar';
 function App() {
   const [metrics, setMetrics] = useState({ ram: "0", status: "Iniciando sensores..." });
   const [bizMetrics, setBizMetrics] = useState({});
@@ -19,7 +19,7 @@ function App() {
     }, 5000);
     return () => clearInterval(interval);
   }, []);
-
+<GroverRadar data={{ business: { poas: 3.52, fidelidad: 100.00, mejor_campaña: 6 } }} />
   return (
     <div className="min-h-screen bg-black text-green-400 p-8 font-mono">
       <h1 className="text-2xl font-bold mb-6">🌀 NODO XALAPA - MICROCOSMOS ÉLITE</h1>
@@ -30,13 +30,18 @@ function App() {
           <div className="mt-4 p-4 border border-green-900/50">
             <p><span className="text-green-400 font-bold">LOG:</span> {metrics.status}</p>
             <p><span className="text-green-400 font-bold">RAM:</span> {metrics.ram_mb} <span className="text-green-500">MB</span></p>
+<GroverRadar data={{ business: { poas: 3.52, fidelidad: 100.00, mejor_campaña: 6 } }} />
           </div>
+<GroverRadar data={{ business: { poas: 3.52, fidelidad: 100.00, mejor_campaña: 6 } }} />
         </div>
         <div>
           <h2 className="text-lg mb-4">📊 Métricas de Negocio</h2>
           <BusinessMetrics data={bizMetrics} />
+<GroverRadar data={{ business: { poas: 3.52, fidelidad: 100.00, mejor_campaña: 6 } }} />
         </div>
+<GroverRadar data={{ business: { poas: 3.52, fidelidad: 100.00, mejor_campaña: 6 } }} />
       </div>
+<GroverRadar data={{ business: { poas: 3.52, fidelidad: 100.00, mejor_campaña: 6 } }} />
     </div>
   );
 }

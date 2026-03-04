@@ -3,10 +3,142 @@ __pycache__/
 *.pyc
 *.py[cod]
 node_modules/
-dist/
-build/
-.env
-*.log
-*.jsonl  # opcional: si no quieres subir telemetry grande
-data/*.log
-data/money.log
+# git push -f origin mainne algo que no quieres:, pero con force si necesitas sobreescribir)si dudas
+Unstaged changes after reset:
+M       data/logs.txt
+M       data/telemetry.jsonl
+M       frontend/public/data/shor_stats.json
+Removing backend/data/cosmos_live.log
+Removing backend/data/latido.log
+Removing backend/data/money.log
+Removing backend/data/money_server.log
+Removing backend/data/resultados_shor.log
+Removing backend/https:/
+Removing backend/node_modules/
+Removing backend/quantum_env/
+Removing frontend/node_modules/
+Removing quantum_env/include/
+Removing quantum_env/lib/python3.11/site-packages/psutil-7.2.2.dist-info/REQUESTED
+[main a14ef7e] 💎 Quantum Nirvana: Estructura Monolítica 100% Limpia y Fidelidad Absoluta
+ 60 files changed, 5027 insertions(+), 4 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 backend/data/cloud_snapshot.json
+ create mode 100644 backend/data/logs.txt
+ create mode 100644 backend/data/resultados_shor.csv
+ create mode 100644 backend/data/shor_stats.json
+ create mode 100644 backend/data/telemetry.jsonl
+ create mode 100644 backend/frontend/.gitignore
+ create mode 100644 backend/frontend/README.md
+ create mode 100644 backend/frontend/eslint.config.js
+ create mode 100644 backend/frontend/index.html
+ create mode 100644 backend/frontend/package-lock.json
+ create mode 100644 backend/frontend/package.json
+ create mode 100644 backend/frontend/public/data/shor_stats.json
+ create mode 100644 backend/frontend/public/vite.svg
+ create mode 100644 backend/frontend/src/App.css
+ create mode 100644 backend/frontend/src/App.jsx
+ create mode 100644 backend/frontend/src/BusinessMetrics.jsx
+ create mode 100644 backend/frontend/src/ShorHistogram.jsx
+ create mode 100644 backend/frontend/src/SingularityPanel.jsx
+ create mode 100644 backend/frontend/src/assets/react.svg
+ create mode 100644 backend/frontend/src/index.css
+ create mode 100644 backend/frontend/src/main.jsx
+ create mode 100644 backend/frontend/vite.config.js
+ create mode 100644 backend/main.py
+ create mode 100644 backend/package-lock.json
+ create mode 100644 backend/package.json
+ create mode 100644 backend/render.yaml
+ create mode 100644 backend/requirements.txt
+ create mode 100755 backend/scripts/bucle_infinito.sh
+ create mode 100755 backend/scripts/celebracion.sh
+ create mode 100755 backend/scripts/centinela.sh
+ create mode 100755 backend/scripts/centinela_ram.sh
+ create mode 100644 backend/scripts/check_harvest.py
+ create mode 100755 backend/scripts/check_health.sh
+ create mode 100755 backend/scripts/ejecutar_shor.sh
+ create mode 100755 backend/scripts/estado_bunker.sh
+ create mode 100755 backend/scripts/guerrilla-ops.sh
+ create mode 120000 backend/scripts/latido.sh
+ create mode 100755 backend/scripts/latido_soberano.sh
+ create mode 100755 backend/scripts/limpiador_auto.sh
+ create mode 100644 backend/scripts/metrics_engine.py
+ create mode 100755 backend/scripts/notificar.sh
+ create mode 100755 backend/scripts/orchestrator_local.sh
+ create mode 100755 backend/scripts/psutil_script.py
+ create mode 100755 backend/scripts/shor_15.py
+ create mode 100755 backend/scripts/sync_mass.sh
+ create mode 100755 backend/scripts/sync_metrics.sh
+ create mode 100755 backend/update_all.sh
+ create mode 100755 data/informe_cuantico.csv
+ create mode 100644 frontend/render.yaml
+ create mode 100644 frontend/requirements.txt
+ create mode 100644 frontend/src/ProfitLoop.jsx
+ create mode 100755 scripts/check_nirvana.sh
+ create mode 100755 scripts/cosecha_victoria.sh
+ create mode 100644 scripts/grover_engine.py
+ create mode 100644 scripts/grover_poas.py
+ create mode 100755 scripts/guardar_csv.sh
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (23/23), 6.03 KiB | 363.00 KiB/s, done.
+Total 23 (delta 6), reused 1 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 6 local objects.
+To https://github.com/brasdefer1597-cloud/microcosmos_elite.git
+   90e22ce..a14ef7e  main -> main
+chalamandramagistral@penguin:~/microcosmos_elite$ git status   # "nothing to commit, working tree clean"
+git log --oneline -3
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   data/logs.txt
+        modified:   data/telemetry.jsonl
+        modified:   frontend/public/data/shor_stats.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a14ef7e (HEAD -> main, origin/main) 💎 Quantum Nirvana: Estructura Monolítica 100% Limpia y Fidelidad Absoluta
+90e22ce Resuelto conflicto en requirements.txt – merge búnker local
+9713841 🚀 Despliegue de Nodo Puente para Microcosmos
+chalamandramagistral@penguin:~/microcosmos_elite$ from qiskit import QuantumCircuit
+
+def aplicar_difusor_maestro(qc: QuantumCircuit, n: int) -> QuantumCircuit:
+    """
+    Aplica el difusor Grover (inversión sobre la media) para n qubits.
+    Mapea |0...0> como estado marcado.
+    """
+    # 1. Cambio de base: H y X para mapear |0...0> a |1...1>
+    for i in range(n):
+        qc.h(i)
+        qc.x(i)
+
+    # 2. Multi-controlled Z (inversión de fase en |1...1>)
+    qc.h(n-1)
+    qc.mcx(list(range(n-1)), n-1)   # mcx = multi-controlled X (para Z equiv)
+    qc.h(n-1)
+
+    # 3. Restaurar base
+    for i in range(n):
+    print(qc.draw())usor_maestro(qc, n_qubits)
+-bash: from: command not found
+-bash: syntax error near unexpected token `('
+-bash: $'\n    Aplica el difusor Grover (inversión sobre la media) para n qubits.\n    Mapea |0...0> como estado marcado.\n    ': command not found
+-bash: syntax error near unexpected token `('
+-bash: syntax error near unexpected token `i'
+-bash: syntax error near unexpected token `i'
+-bash: syntax error near unexpected token `n-1'
+-bash: syntax error near unexpected token `list'
+-bash: syntax error near unexpected token `n-1'
+-bash: syntax error near unexpected token `('
+-bash: syntax error near unexpected token `i'
+-bash: syntax error near unexpected token `i'
+-bash: return: qc: numeric argument required
+-bash: return: can only `return' from a function or sourced script
+-bash: syntax error near unexpected token `('
+-bash: syntax error near unexpected token `('
+-bash: syntax error near unexpected token `qc.draw'
+chalamandramagistral@penguin:~/microcosmos_elite$ cat << 'EOF' > ~/microcosmos_elite/scripts/difusor_grover.py
+# pega el código de arriba aquí

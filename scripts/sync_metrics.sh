@@ -1,32 +1,47 @@
 #!/bin/bash
-ROOT="$HOME/microcosmos_elite"
-CSV_FILE="$ROOT/data/resultados_shor.csv"
-JSON_FILE="$ROOT/frontend/public/data/shor_stats.json"
+ROOT="/home/chalamandramagistral/microcosmos_elite"
+REPORT_CSV="$ROOT/data/informe_rendimiento.csv"
 
-if [ ! -f "$CSV_FILE" ]; then
-    echo "❌ CSV no encontrado. Ejecuta primero shor_15.py"
-    exit 1
-fi
+# 1. Obtener Telemetría de Hardware
+HW_RAW=$(python3 $ROOT/scripts/metrics_engine.py)
+TS=$(echo $HW_RAW | jq -r '.timestamp')
+TIME=$(echo $HW_RAW | jq -r '.ejecucion_seg')
+RAM=$(echo $HW_RAW | jq -r '.ram_mb_delta')
+CPU=$(echo $HW_RAW | jq -r '.cpu_percent')
 
-ULTIMA_LINEA=$(tail -n 1 "$CSV_FILE")
-if [ -z "$ULTIMA_LINEA" ]; then
-    echo "⚠️ CSV vacío. Esperando primera ejecución de shor_15.py"
-    exit 0
-fi
+# 2. Obtener Datos de Negocio (Grover)
+BIZ_RAW=$(python3 $ROOT/scripts/grover_engine.py)
+POAS=$(echo $BIZ_RAW | jq -r '.poas')
+FID=$(echo $BIZ_RAW | jq -r '.fidelidad')
+# Corregimos el nombre de la clave para evitar caracteres especiales
+IDX=$(echo $BIZ_RAW | jq -r '.mejor_campaña // .mejor_campana // 6')
 
-IFS=',' read -r ts time ram cpu success <<< "$ULTIMA_LINEA"
+# 3. Registro Consolidado
+echo "$TS,$TIME,$RAM,$CPU,$POAS,$FID,$IDX" >> $REPORT_CSV
 
-C0000=$((250 + RANDOM % 20))
-C0100=$((250 + RANDOM % 20))
-C1000=$((250 + RANDOM % 20))
-C1100=$((250 + RANDOM % 20))
+# 4. Construcción del JSON con sintaxis de espacios correcta
+# Nota: --arg [nombre] [valor]
+JSON_DATA=$(jq -n \
+  --arg ts "$TS" \
+  --arg tm "$TIME" \
+  --arg rm "$RAM" \
+  --arg cp "$CPU" \
+  --arg ps "$POAS" \
+  --arg fd "$FID" \
+  --arg idx "$IDX" \
+  '{
+    timestamp: $ts,
+    latencia_seg: $tm,
+    ram_delta: $rm,
+    cpu_uso: $cp,
+    business: {
+      poas: ($ps | tonumber),
+      fidelidad: ($fd | tonumber),
+      campana_ganadora: ($idx | tonumber),
+      status: "NIRVANA_CODE"
+    }
+  }')
 
-jq -n \
-  --argjson c "{\"0000\": $C0000, \"0100\": $C0100, \"1000\": $C1000, \"1100\": $C1100}" \
-  --arg t "$time" \
-  --arg s "$success" \
-  --arg r "$ram" \
-  --arg cp "$cpu" \
-  '{counts: $c, time: ($t | tonumber), success: ($s == "True"), metrics: {ram_mb: ($r | tonumber), cpu_percent: ($cp | tonumber)}}' > "$JSON_FILE"
+echo "$JSON_DATA" > "$ROOT/frontend/public/data/shor_stats.json"
 
-echo "📊 Métricas actualizadas en $JSON_FILE"
+echo "📊 Telemetría: CPU ${CPU}% | RAM Delta: ${RAM}MB | Nirvana: ${FID}%"
