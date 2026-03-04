@@ -1,6 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Activity, Zap, Radio, Database, ShieldAlert } from 'lucide-react';
+import GroverRadar from './components/GroverRadar';useEffect(() => {
+  const updateDashboard = async () => {
+    try {
+      const response = await fetch('/data/history.json');
+      const data = await response.json();
+      console.log("📈 Nirvana Actualizado: POAS actual es", data.slice(-1)[0]?.poas || 'N/A');
+      // Aquí puedes actualizar estado local para re-render (useState)
+    } catch (err) {
+      console.error("Fetch history failed:", err);
+    }
+  };
+
+  updateDashboard();
+  const interval = setInterval(updateDashboard, 12000);
+  return () => clearInterval(interval);
+}, []);
+
+// En el return, después de otros elementos:
+<GroverRadar data={snapshot || { business: { poas: 3.52, fidelidad: 100.00, mejor_campaña: 6 } }} />
 
 const StatCard = ({ label, value, color, suffix = "", icon }) => (
   <div className="p-4 border border-green-900 bg-zinc-950/50 relative group">
